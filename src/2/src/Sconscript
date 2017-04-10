@@ -1,0 +1,10 @@
+import os
+from tools import *
+
+src = Glob('*.c')
+
+CPPPATH = []
+
+group = DefineGroup('src', src, depend=[''], CPPPATH=CPPPATH)
+
+Return('group')
